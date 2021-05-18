@@ -81,9 +81,9 @@ function draw() {
     let directionVal = randSlider.value() / 100;
     let bgVal = bgSlider.value();
     
-    if (bgVal == 1) background(0, 0, 0, opacityVal);
-    else if (bgVal == 2) background(212, 241, 249, opacityVal);
-    else background(255, 255, 255, opacityVal);
+    if (bgVal == 1) {background(0, 0, 0, opacityVal);}
+    else if (bgVal == 2) {background(212, 241, 249, opacityVal);}
+    else {background(255, 255, 255, opacityVal);}
     
 	for (let i = 0; i < NUM_TADPOLES; i++) {
 		tadpoles[i].update(directionVal);
